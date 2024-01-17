@@ -1,21 +1,24 @@
 
-export default function Card(){
+export default function Card({name="Shashi",btnTxt="View"}){
     return(
-        <div>
-        <img
-         
-          src="https://www.istockphoto.com/photo/businesswoman-hands-using-laptop-with-icon-social-media-and-social-network-gm916036268-252079108?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Flink%2F&utm_term=link"
-          alt="green iguana"
-        />
-        
-          <div  variant="h5" component="div">
-            Lizard
-          </div>
-          <div variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </div>
-          <button>Share</button>
+      <div class="relative h-[400px] w-[300px] rounded-md">
+      <img
+        src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+        alt="AirMax Pro"
+        class="z-0 h-full w-full rounded-md object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div class="absolute bottom-4 left-4 text-left">
+        <h1 class="text-lg font-semibold text-white">{name}</h1>
+        <p class="mt-2 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          debitis?
+        </p>
+        <button class="mt-2 bg-gray-950 rounded-3xl inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+          {btnTxt}
+        </button>
+      </div>
     </div>
+    
     )
 }
